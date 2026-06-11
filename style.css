@@ -20,8 +20,8 @@ body {
 
 .header{
     background-color: rgba(30, 0, 68, 0.95);
-    padding: 40px, 10px, 40px, 10px;
-    width: 90vh;
+    padding: 40px;
+    width: 80%;
     border-radius: 40px;
     box-shadow: 5px 5px 30px black;
     text-align: center ;
@@ -47,7 +47,7 @@ body {
 }
 
 .btn{
-    background-color:rgb(195, 251, 255);
+    background-color:antiquewhite;
     color: rgb(30, 0, 68);
     border: none;
     padding: 10px 20px;
@@ -59,7 +59,7 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(195, 251, 255);
+    background-color: antiquewhite;
     transform: translateY(-3px);
     transform: rotate(10);
     transition: 0.2s;
@@ -75,7 +75,7 @@ body {
 }
 
 h1{
-    color: rgb(195, 251, 255);
+    color: antiquewhite;
     margin-bottom: 10px;
     font-size: 5em;
 }
@@ -100,7 +100,7 @@ h2 {
 }
 
 .counter-card {
-    color: rgb(62, 4, 129);
+    color: #3e0481;
     background-color: antiquewhite;
     padding: 10px;
     border-radius: 15px;
@@ -142,4 +142,90 @@ h2 {
     .counter-number {
         font-size: 1.8em;
     }
+}
+
+.correio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: rgba(30, 0, 68, 0.95);
+    min-height: 500px;
+    position: relative;
+}
+
+.carta{
+    position: relative;
+    width: 250px;
+    background: #fef8e7;
+    padding: 20px;
+    border-radius: 2px;
+    transform: rotate(var(--rotacao, 0deg));
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px;
+    
+    /* Efeito de papel antigo */
+    box-shadow: 
+        0 5px 15px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.8),
+        inset 0 -1px 0 rgba(0,0,0,0.05);
+    
+    /* Bordas irregulares estilo papel rasgado */
+    clip-path: polygon(
+        0% 3%,
+        3% 0%,
+        97% 0%,
+        100% 3%,
+        100% 97%,
+        97% 100%,
+        3% 100%,
+        0% 97%
+    );
+}
+
+.carta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0,0,0,0.02) 10px,
+        rgba(0,0,0,0.02) 20px
+    );
+    pointer-events: none;
+}
+
+.carta:nth-child(1) { transform: rotate(-7deg); margin-top: 10px; }
+.carta:nth-child(2) { transform: rotate(4deg); margin-top: -10px; }
+.carta:nth-child(3) { transform: rotate(-3deg); margin-top: 5px; }
+
+.carta:hover {
+    transform: rotate(-1deg) scale(1.1);
+}
+
+.carta h3 {
+    color: #8b4513;
+    text-align: center;
+    border-bottom: 1px dashed #d4a574;
+    padding-bottom: 10px;
+}
+p {
+    color: #5c3a21;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.assinatura {
+    text-align: right;
+    font-style: italic;
+    color: #c0392b;
+    margin-top: 15px;
 }
