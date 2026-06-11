@@ -6,7 +6,6 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     background: antiquewhite;
-    background-image: url('imagem/caixa.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,9 +146,10 @@ h2 {
 .correio {
     display: flex;
     justify-content: center;
+    padding: 40px;
+    border-radius: 40px;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 40px 20px;
     background: rgba(30, 0, 68, 0.95);
     min-height: 500px;
     position: relative;
@@ -229,3 +229,41 @@ p {
     color: #c0392b;
     margin-top: 15px;
 }
+.container-fotos{
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 0, 68, 0.95);
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding: 40px;
+    border-radius: 40px;
+}
+.titulo-foto h3{
+    font-size: 3rem;
+}
+
+.mural{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foto{
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+#meio{
+    margin-left: 15% ;
+}
+
+.foto:nth-child(1) { transform: rotate(-15deg); margin-top: 10px; margin-bottom: 40px; }
+.foto:nth-child(2) { transform: rotate(10deg); margin-top: 60px;  }
+.foto:nth-child(3) { transform: rotate(-3deg); margin-top: 5px; margin-bottom: 45px;}
+.foto:nth-child(4) { transform: rotate(10deg); margin-top: -11px; margin-bottom: 61px;}
+.foto:nth-child(5) { transform: rotate(-21deg); margin-top: 9px; margin-bottom: 41px;}
+.foto:nth-child(6) { transform: rotate(10deg); margin-top: -20px; margin-bottom: 70px;}
+.foto:nth-child(7) { transform: rotate(-15deg); margin-top: 50px;}
+.foto:nth-child(8) { transform: rotate(-9deg); margin-top: -40px; margin-bottom: 90px;}
