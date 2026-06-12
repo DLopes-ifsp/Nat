@@ -24,6 +24,7 @@ html {
 }
 
 body {
+    width: 720px;
     font-family: 'Arial', sans-serif;
     background: antiquewhite;
     background-size: cover;
@@ -206,7 +207,7 @@ h2 {
 
 .carta{
     position: relative;
-    width: 250px;
+    width: 325px;
     background: #fef8e7;
     padding: 20px;
     border-radius: 2px;
@@ -253,9 +254,9 @@ h2 {
     pointer-events: none;
 }
 
-.carta:nth-child(1) { transform: rotate(-11deg); margin-top: 10px; }
-.carta:nth-child(2) { transform: rotate(7deg); margin-top: -30px; margin-left: -60px; }
-.carta:nth-child(3) { transform: rotate(-20deg); margin-top: -20px; margin-left: 30px; }
+.carta:nth-child(1) { transform: rotate(-15deg); margin-top: 60px; margin-bottom: 10px; margin-left: -150px;}
+.carta:nth-child(2) { transform: rotate(15deg); margin-top: -50px; margin-left:100px;}
+.carta:nth-child(3) { transform: rotate(-20deg); margin-top: -20px; margin-left: 30px;}
 
 .carta:hover {
     transform: rotate(-1deg) scale(1.1);
@@ -343,10 +344,10 @@ p {
 }
 
 .foto:nth-child(1) { transform: rotate(15deg); margin-top: 10px; margin-bottom: 110px; }
-.foto:nth-child(2) { transform: rotate(-10deg); margin-top: 120px;  }
+.foto:nth-child(2) { transform: rotate(-10deg); margin-top: 120px; }
 .foto:nth-child(3) { transform: rotate(3deg); margin-top: 5px; margin-bottom: 115px;}
 .foto:nth-child(4) { transform: rotate(20deg); margin-top: -11px; margin-bottom: 131px;}
-.foto:nth-child(5) { transform: rotate(-30deg); margin-top: -100px ; margin-bottom: 220px;}
+.foto:nth-child(5) { transform: rotate(-30deg); margin-top: -30px ; margin-bottom: 150px;}
 .foto:nth-child(6) { transform: rotate(10deg); margin-top: -20px; margin-bottom: 140px;}
 .foto:nth-child(7) { transform: rotate(15deg); margin-top: -90px; margin-bottom: 100px;}
 .foto:nth-child(8) { transform: rotate(-9deg); margin-top: -140px; margin-bottom: 90px;}
