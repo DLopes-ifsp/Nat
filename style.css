@@ -1,6 +1,26 @@
-
+@import url('https://googleapis.com');
 html {
     scroll-behavior: smooth;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.petala {
+    position: fixed;
+    top: -20px;
+    font-size: 25px;
+    animation: cair linear infinite;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 body {
@@ -24,7 +44,29 @@ body {
     border-radius: 40px;
     box-shadow: 5px 5px 30px black;
     text-align: center ;
+    margin-bottom: 100px;
 }
+
+.introducao{
+    margin-bottom: 200px;
+    text-align: center;
+    font-family: 'Story Script', cursive;
+    width:80%;
+}
+
+h5{
+    color: rgb(30, 0, 68);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.frase{
+    color: rgb(30, 0, 68);
+    font-size: 1.5em;
+    font-family: Brush Script MT, Brush Script Std, cursive ;
+    font-weight: bolder;
+}
+
 
 .navegar{
     display: flex;
@@ -38,6 +80,7 @@ body {
     justify-content: center;
     justify-items: center;
     font-family: Brush Script MT, Brush Script Std, cursive ;
+    font-size: 0.9em;
 }
 
 .menu{
@@ -49,12 +92,13 @@ body {
     background-color:antiquewhite;
     color: rgb(30, 0, 68);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: Brush Script MT, Brush Script Std, cursive ;
     margin-bottom: 10px;
+    font-weight: bolder;
 }
 
 .btn:hover {
@@ -66,11 +110,12 @@ body {
 
 .container {
     background: rgba(30, 0, 68, 0.95);
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 40px;
     box-shadow: 5px 5px 30px black;
     text-align: center;
     width: 80%;
+    margin-bottom: 200px;
 }
 
 h1{
@@ -93,9 +138,10 @@ h2 {
 
 .counter-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
     margin-bottom: 30px;
+    
 }
 
 .counter-card {
@@ -153,6 +199,9 @@ h2 {
     background: rgba(30, 0, 68, 0.95);
     min-height: 500px;
     position: relative;
+    margin-bottom: 200px;
+    box-shadow: 5px 5px 30px black;
+    width: 80%;
 }
 
 .carta{
@@ -166,6 +215,7 @@ h2 {
     cursor: pointer;
     position: relative;
     border-radius: 2px;
+    
     
     /* Efeito de papel antigo */
     box-shadow: 
@@ -203,9 +253,9 @@ h2 {
     pointer-events: none;
 }
 
-.carta:nth-child(1) { transform: rotate(-7deg); margin-top: 10px; }
-.carta:nth-child(2) { transform: rotate(4deg); margin-top: -10px; }
-.carta:nth-child(3) { transform: rotate(-3deg); margin-top: 5px; }
+.carta:nth-child(1) { transform: rotate(-11deg); margin-top: 10px; }
+.carta:nth-child(2) { transform: rotate(7deg); margin-top: -30px; margin-left: -60px; }
+.carta:nth-child(3) { transform: rotate(-20deg); margin-top: -20px; margin-left: 30px; }
 
 .carta:hover {
     transform: rotate(-1deg) scale(1.1);
@@ -217,6 +267,11 @@ h2 {
     border-bottom: 1px dashed #d4a574;
     padding-bottom: 10px;
 }
+
+h3{
+    text-align: center;
+}
+
 p {
     color: #5c3a21;
     line-height: 1.6;
@@ -229,18 +284,50 @@ p {
     color: #c0392b;
     margin-top: 15px;
 }
+
+.slideshow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px black;
+    background: rgba(30, 0, 68, 0.95);
+    margin-bottom: 200px;
+}
+
+.controles{
+    background-color:antiquewhite;
+    color: rgb(30, 0, 68);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: Brush Script MT, Brush Script Std, cursive ;
+    margin-top: 20px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .container-fotos{
     display: flex;
     flex-direction: column;
     background: rgba(30, 0, 68, 0.95);
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 80%;
     padding: 40px;
     border-radius: 40px;
+    box-shadow: 5px 5px 30px black;
 }
 .titulo-foto h3{
     font-size: 3rem;
+    color: antiquewhite;
+
 }
 
 .mural{
@@ -255,15 +342,42 @@ p {
     padding-bottom: 60px;
 }
 
-#meio{
-    margin-left: 15% ;
+.foto:nth-child(1) { transform: rotate(15deg); margin-top: 10px; margin-bottom: 110px; }
+.foto:nth-child(2) { transform: rotate(-10deg); margin-top: 120px;  }
+.foto:nth-child(3) { transform: rotate(3deg); margin-top: 5px; margin-bottom: 115px;}
+.foto:nth-child(4) { transform: rotate(20deg); margin-top: -11px; margin-bottom: 131px;}
+.foto:nth-child(5) { transform: rotate(-30deg); margin-top: -100px ; margin-bottom: 220px;}
+.foto:nth-child(6) { transform: rotate(10deg); margin-top: -20px; margin-bottom: 140px;}
+.foto:nth-child(7) { transform: rotate(15deg); margin-top: -90px; margin-bottom: 100px;}
+.foto:nth-child(8) { transform: rotate(-9deg); margin-top: -140px; margin-bottom: 90px;}
+
+.btn-amor{
+    background-color:rgb(30, 0, 68);
+    color: antiquewhite;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: Brush Script MT, Brush Script Std, cursive ;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 30px black;;
 }
 
-.foto:nth-child(1) { transform: rotate(-15deg); margin-top: 10px; margin-bottom: 40px; }
-.foto:nth-child(2) { transform: rotate(10deg); margin-top: 60px;  }
-.foto:nth-child(3) { transform: rotate(-3deg); margin-top: 5px; margin-bottom: 45px;}
-.foto:nth-child(4) { transform: rotate(10deg); margin-top: -11px; margin-bottom: 61px;}
-.foto:nth-child(5) { transform: rotate(-21deg); margin-top: 9px; margin-bottom: 41px;}
-.foto:nth-child(6) { transform: rotate(10deg); margin-top: -20px; margin-bottom: 70px;}
-.foto:nth-child(7) { transform: rotate(-15deg); margin-top: 50px;}
-.foto:nth-child(8) { transform: rotate(-9deg); margin-top: -40px; margin-bottom: 90px;}
+.btn-amor:hover {
+    background-color: rgb(30, 0, 68);
+    transform: translateY(-3px);
+    transform: rotate(10);
+    transition: 0.2s;
+}
+
+.mensagem-amor{
+    color: rgb(30, 0, 68);
+    font-size: 1.5em;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding: 40px;
+}

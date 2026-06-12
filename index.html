@@ -17,25 +17,74 @@
         <nav class="navegar">
             <button class="btn" onclick="location.href='#declaracao'">Declaracao</button>
             <button class="btn" onclick="location.href='#contador'">Contador</button>
-            <button class="btn" onclick="location.href='#fotos'">Nossas Fotos</button>
+            <button class="btn" onclick="location.href='#slide'">Nossas Fotos</button>
         </nav>
+    </div>
+    <br>
+    <div class="introducao">
+        <h5>Seu namorado preparou uma surpresa gigante somente pra Voce!</h5>
+        <h5>Espero que goste! EUTEAMO 💖</h5>
+        <div id="frasesinhas" class="frase"></div>
     </div>
     <br>
     <div class="correio" id="declaracao">
         <div class="carta">
-            <h3>💌 Exemplo</h3>
-            <p>Lorem ipsum sit dolor amet,Lorem ipsum sit dolor amet.</p>
-            <p class="assinatura">Com amor, seu namorado ❤️</p>
+            <h3>💌 Para meu Girassol</h3>
+            <p>Sua beleza vai além de Roupa e Corpo<br>
+                Mas já que esse é o assunto <br>
+                Suas curvas me cativam <br>
+                De uma forma hipnotizante<br>
+                Meus neurônios ativam<br>
+                Me dando uma porrada ignorante<br>
+                Suas roupas me seduzem<br>
+                De uma forma intrigante<br>
+                Peço aos meus amigos que me ajudem<br>
+                Porque essa mulher é deslumbrante<br>
+
+                Você passa aos meus olhos <br>
+                Como um girassol <br>
+                Meu pescoço trava no seu caminhar<br>
+                Como um girassol<br>
+                Sua luz que erradia, chama minha atenção <br>
+                Como um girassol<br>
+                E eu diria que sem você morreria<br>
+                Como um girassol<br>
+
+                Assim como teu toque me contamina<br>
+                E o preto me dizia<br>
+                "Para de falar dessa menina"<br>
+                Mas eu não parava de falar, e ele ouvia<br>
+                Seu olhar meu dia ilumina<br>
+                E parar de te olhar, eu não queria<br>
+
+                Ao descobrir seus lábios <br>
+                Experimentei algo que nunca provei<br>
+                E quando você subiu no meu colo<br>
+                Sai de príncipe, para rei<br>
+                Eu era teu trono, e você minha rainha<br>
+                E tive certeza disso, quando te olhei<br>
+            </p>
+            <p class="assinatura"> ass: Um poeta Desajeitado ❤️</p>
         </div>
         <div class="carta">
-            <h3>💌 Exemplo</h3>
-            <p>Lorem ipsum sit dolor amet.</p>
-            <p class="assinatura">Com amor, seu namorado ❤️</p>
+            <h3>💌 Querida Princesa </h3>
+            <p>
+                Venho atravéz dessa carta para te dizer da forma mais leve e pura, que o meu objetivo hoje, está cada vez mais próximo, gostaria que você soubesse que eu estou entendendo cada vez mais tudo que aconteceu e como te machucou.
+  Hoje sou uma pessoa diferente, que pensa diferente, percebo que não devo justificar ou relembrar meu erro, é muito menos pedir desculpas, pois oque realmente importa agora é cuidar da gente no presente.
+  Eu tô aprendendo a estar aqui de verdade, sem te machucar, e sempre estando presente para seus desabafos, por mais duros que eles sejam comigo, espero que, mais tarde você possa ser meus ouvidos também, e me acolher dessa dor tardia que chegará em meu coração.
+  Espero estar fazendo e te acolhendo corretamente, espero que seja assim a forma correta, pois foi assim que eu encontrei da minha forma mais racional e desesperada, algum tipo de resposta pra você. 
+  As vezes demoro escrever, pois estou lendo e relendo oque foi dito, para que eu não acabe te desmoronando denovo, estou pensando antes de enviar. 
+  Me desculpa se parecer repetitivo ou massante, ainda não aperfeiçoei a minha forma de fazer isso e espero realmente que esteja certo.
+            </p>
+            <p class="assinatura"> Atenciosamente, seu Principe ❤️</p>
         </div>
         <div class="carta">
-            <h3>💌 Exemplo</h3>
-            <p>Lorem ipsum sit dolor amet,Lorem ipsum sit dolor amet, Lorem ipsum sit dolor amet, Lorem ipsum sit dolor amet.</p>
-            <p class="assinatura">Com amor, seu namorado ❤️</p>
+            <h3>💌 </h3>
+            <p>Hoje fazendo 430 dias com você, percebo o quanto a vida passa rápido, e como essa vida complexa de 1001 desfechos diferentes, pode ser a melhor possível quando você está do meu Lado.
+  Hoje a vida me mostra o quão irônica ela é, pois eu não sabia que precisava de você, ate te conhecer.
+ Aquele storys que eu respondi, inicia o maior dos efeitos borboletas da nossa vida, onde aquelas implicâncias e brincadeiras, apenas escondiam uma paixão forte assim, vinda dos dois lados!
+ Desde o nosso primeiro sábado, eu nunca quis sair do seu lado , e depois daquele dia, todos os meus fins de semana, era um plano diferente pra te ver.</p>
+            <p class="assinatura">Com amor, Destino ❤️</p>
         </div>
     </div>
     <br>
@@ -71,37 +120,48 @@
         </div>
     </div>
     <br>
+    <div class="slideshow" id="slide">
+        <h2>Nosso Álbum de Fotos</h2>
+        <img id="foto" src="foto1.jpg" width="300">
+        <br>
+        <div class="navegar-fotos">
+            <button class="controles" onclick="trocarFoto(-1)">◀</button>
+            <button class="controles" onclick="trocarFoto(1)">▶</button>
+        </div>
+    </div>
     <div class="container-fotos">
         <div class="titulo-foto">
-            <h3>Amo cada foto nossa!!</h3>
+            <h3>Minhas Favoritas</h3>
         </div>
         <div class="mural" id="fotos">
             
             <div class="foto">
-                <img src="imagem/caixa.jpg" height="300px">
+                <img src="imagem/bantuknots.jpeg" width="120px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/caixa.jpg" width="120px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/muck.jpg" width="120px">
             </div>
             <div class="foto" id="meio">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/primeirosabado.jpg" width="120px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/piscinasafada.jpeg" width="120px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/miranhahellokitty.jpeg" width="120px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/amulhermaisbeladomundo.jpg" width="110px">
             </div>
             <div class="foto">
-                <img src="imagem/caixa.jpg" width="200px">
+                <img src="imagem/gostosa.jpg" width="150px">
             </div>
         </div>
     </div>
+    <button onclick="mostrarAmor()" class="btn-amor">Clique para ganhar um eu te amo! 💕</button>
+    <div class="mensagem-amor" id="mensagem-amor"></div>
 </body>
 </html>
